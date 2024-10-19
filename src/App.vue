@@ -1,24 +1,16 @@
 <template>
-
+<div id="app">
+  <router-view />
+</div>
 </template>
 
-<style>
-
+<style lang="less">
+html, body {
+  margin: 0;
+  padding: 0;
+}
 </style>
 
 <script>
-export default {
-  data() {
-    return {
-      value1: 0,
-      value2: 50,
-      value3: 36,
-      value4: 48,
-      value5: 42
-    }
-  },
-  methods: {
 
-  }
-}
 </script>
