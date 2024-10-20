@@ -77,6 +77,7 @@ export default {
 .el-menu {
   height: 100vh;
   overflow: hidden; /* 超过300px时, 横向滚动条隐藏 */
+  border-right: none;
   h3 {
     background: rgb(121 133 146);
     border-radius: 8px;

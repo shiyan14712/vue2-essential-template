@@ -1,5 +1,6 @@
 <script setup>
 import ASide from "@/components/SideNav/ASide.vue"
+import CommonHeader from "@/components/Header/CommonHeader.vue";
 </script>
 
 <template>
@@ -9,7 +10,9 @@ import ASide from "@/components/SideNav/ASide.vue"
       <a-side></a-side>
     </el-aside>
     <el-container>
-      <el-header>Header</el-header>
+      <el-header>
+        <common-header />
+      </el-header>
       <el-main>
         <router-view />
       </el-main>
@@ -19,5 +22,7 @@ import ASide from "@/components/SideNav/ASide.vue"
 </template>
 
 <style scoped>
-
+.el-header {
+  padding: 0;
+}
 </style>
