@@ -29,6 +29,11 @@ export default {
       }
     }
   },
+  computed: {
+    isCollapse() {
+      return this.$store.state.tab.isCollapse
+    }
+  },
   mounted() {
     this.getHomeRoutes()
   }
@@ -44,7 +49,9 @@ export default {
         @close="handleClose"
         background-color="#545c64"
         text-color="#fff"
-        active-text-color="#ffd04b">
+        active-text-color="#ffd04b"
+        :collapse="isCollapse"
+    >
       <h3>通用后台管理系统</h3>
       <el-submenu index="1">
         <template slot="title">

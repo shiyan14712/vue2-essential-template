@@ -3,8 +3,13 @@ export default {
         isCollapse: false, // 控制侧边栏的展开和收起
     },
     mutations: {
-        collapse(state) {
+        collapseMenu(state) {
             state.isCollapse = !state.isCollapse
+        }
+    },
+    actions: {
+        setCollapse({ commit }) {
+            commit('collapseMenu')
         }
     }
 }

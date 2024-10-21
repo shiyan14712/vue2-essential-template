@@ -1,11 +1,18 @@
-<script setup>
-
+<script>
+export default {
+  methods: {
+    handleSideNavCollapse() {
+      // 提交action
+      this.$store.dispatch('setCollapse')
+    }
+  }
+}
 </script>
 
 <template>
 <div class="header-container">
   <div class="left-content">
-    <el-button icon="el-icon-s-operation" size="small"></el-button>
+    <el-button icon="el-icon-s-operation" size="small" @click="handleSideNavCollapse"></el-button>
     <!-- 面包屑 -->
     <span class="breadcrumb-text">首页</span>
   </div>
